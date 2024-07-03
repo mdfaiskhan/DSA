@@ -1,0 +1,28 @@
+//find the nth term using AP
+//a(n)=a+(n-1)*d
+// public class Main {
+//     public static int nthterm(int a,int d, int n){
+//         return a+(n-1)*d;
+//     }
+//     public static void main(String[] args) {
+//         System.out.println("Hello World!");
+//         int a=3;
+//         int d=3;
+//         int n=10;
+//         System.out.println(nthterm(a,d,n));
+//     }
+// }
+
+//sum of all
+public class Main{
+    public static int sum(int a,int n,int d){
+        return n*(2*a+(n-1)*d)/2;
+    }
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+         int a=3;
+        int d=3;
+        int n=10;
+        System.out.println(sum(a,n,d));
+    }
+}
