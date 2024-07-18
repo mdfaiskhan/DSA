@@ -1,0 +1,26 @@
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+        int[] arr=new int[]{1,2,3,4,5}; 
+        
+        // Add 10 to first element 
+        arr[0]=arr[0]+10; //TS O(1) sc O(1)
+        //Task : Print the elements of an array
+        for(int i=0;i<arr.length;i++){ //TS O(N) SC O(1)
+            System.out.println(arr[i]);
+        }
+        
+        //the elements from array to another newar
+        int[] newarr=new int[arr.length]; //T.S O(1) | S.C O(n)
+        for(int i=0;i<arr.length;i++){ // T.S O(n) | S.C O(1)
+            newarr[i] = arr[i];
+        }
+        for(int num: newarr){ //T.S O(N) | S.C O(1)
+            System.out.println(num);
+            
+            //overall
+            //T.S - 1+n+1+1+n+n = O(3+3n) = O(3n) == O(3*n) = o(n)
+            //S.C - 1+1+1+1+n+1 = O(5+n) = O(n)
+        }
+    }
+}
